@@ -1,9 +1,9 @@
 %define upstream_name    ExtUtils-Manifest
-%define upstream_version 1.58
+%define upstream_version 1.60
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 5
+Release:    1
 
 Summary:    Utilities for managing MANIFEST files
 License:    GPL+ or Artistic
@@ -14,7 +14,6 @@ Source0:    http://www.cpan.org/modules/by-module/ExtUtils/%{upstream_name}-%{up
 BuildRequires: perl(File::Basename)
 BuildRequires: perl(File::Spec)
 BuildArch: noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Functions
@@ -36,11 +35,7 @@ Functions
 make test
 
 %install
-rm -rf %buildroot
 %makeinstall_std
-
-%clean
-rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
