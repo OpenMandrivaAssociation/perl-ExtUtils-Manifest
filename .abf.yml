@@ -1,2 +1,4 @@
+removed_sources:
+  ExtUtils-Manifest-1.60.tar.gz: b07e93f5520e8001a44a92f18572ce47fad44339
 sources:
-  "ExtUtils-Manifest-1.60.tar.gz": b07e93f5520e8001a44a92f18572ce47fad44339
+  ExtUtils-Manifest-1.61.tar.gz: c6582ed1bba477555910df65ba277d6203fe5448

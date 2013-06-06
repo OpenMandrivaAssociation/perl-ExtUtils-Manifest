@@ -1,15 +1,14 @@
 %define upstream_name    ExtUtils-Manifest
-%define upstream_version 1.60
-
+%define upstream_version 1.61
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 1.61
+Release:	1
 
 Summary:	Utilities for managing MANIFEST files
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/ExtUtils/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/ExtUtils/ExtUtils-Manifest-1.61.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(File::Basename)
@@ -79,4 +78,5 @@ make test
 * Fri May 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.560.0-1mdv2010.0
 + Revision: 381060
 - import perl-ExtUtils-Manifest
+
 
